@@ -35,7 +35,7 @@ export class MovieDetails extends Component {
     }
 
     fetchMovieDetails = () => {
-        axios.get(`/movies/${this.props.match.params.id}`)
+        axios.get(`https://filmfanatics-api.herokuapp.com/movies/${this.props.match.params.id}`)
             .then((res) => {
                 this.setState({ movie: res.data })
             }).catch((err) => console.error('Error occured during fetching movie details', err))
@@ -46,7 +46,7 @@ export class MovieDetails extends Component {
     }
 
     onRatingChange = (value) => {
-        axios.post('/movies/rate', null, {
+        axios.post('https://filmfanatics-api.herokuapp.com/movies/rate', null, {
             params: {
                 movieId: this.props.match.params.id,
                 rating: value
@@ -94,7 +94,7 @@ export class MovieDetails extends Component {
     }
 
     onSendComment = () => {
-        axios.post('/movies/comment', null, {
+        axios.post('https://filmfanatics-api.herokuapp.com/movies/comment', null, {
             params: {
                 movieId: this.props.match.params.id,
                 content: this.state.commentText

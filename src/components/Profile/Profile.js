@@ -19,7 +19,7 @@ class Profile extends Component {
     }
 
     fetchProfileDetails() {
-        axios.get('/profile/details')
+        axios.get('https://filmfanatics-api.herokuapp.com/profile/details')
             .then((res) => {
                 this.setState({ followedArtists: res.data.followedArtists })
                 this.setState({ ratedMovies: res.data.ratedMovies })
@@ -35,7 +35,7 @@ class Profile extends Component {
     }
 
     onStopFollowClicked = (artistId) => {
-        axios.delete('/artists/follow', {
+        axios.delete('https://filmfanatics-api.herokuapp.com/artists/follow', {
             params: {
                 artistId: artistId
             }

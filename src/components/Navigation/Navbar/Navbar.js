@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         } else {
             this.setState({ searchPlaceholder: 'Film keresése...' })
         }
-        axios.get('/profile')
+        axios.get('https://filmfanatics-api.herokuapp.com/profile')
             .then(res => {
                 if (res.data.user_id) {
                     this.setState({ isAuthenticated: true });
@@ -35,7 +35,7 @@ class Navbar extends React.Component {
     }
 
     onSignOutClick = () => {
-        axios.get('/auth/logout', { withCredentials: true })
+        axios.get('https://filmfanatics-api.herokuapp.com/auth/logout', { withCredentials: true })
             .then(function (response) {
                 window.location.href = constants.BASE_URL;
             })

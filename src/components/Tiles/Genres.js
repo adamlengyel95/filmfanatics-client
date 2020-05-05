@@ -32,7 +32,7 @@ export default class Genres extends Component {
         ]
     }
     componentDidMount() {
-        axios.get(`/movies/genres`)
+        axios.get(`https://filmfanatics-api.herokuapp.com/movies/genres`)
             .then((res) => {
                 this.setState({ genres: res.data })
             }).catch((err) => console.error('Error occured during fetching genres', err))

@@ -2,7 +2,7 @@ import { FETCH_MOVIES, SEARCH_MOVIES } from './types';
 import axios from 'axios';
 
 export const fetchMovies = () => dispatch => {
-    axios.get('/movies/home')
+    axios.get('https://filmfanatics-api.herokuapp.com/movies/home')
         .then(res => {
             const movies = res.data;
             dispatch({
@@ -13,7 +13,7 @@ export const fetchMovies = () => dispatch => {
 }
 
 export const searchMovies = title => dispatch => {
-    axios.get('/movies/search-home', {
+    axios.get('https://filmfanatics-api.herokuapp.com/movies/search-home', {
         params:
             { title: title }
     }).then(res => {

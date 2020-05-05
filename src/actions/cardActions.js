@@ -2,7 +2,7 @@ import { SEARCH_MOVIES, FETCH_CARDS, CLEAR_CARDS } from './types';
 import axios from 'axios';
 
 export const fetchMovies = () => dispatch => {
-    axios.get('/movies')
+    axios.get('https://filmfanatics-api.herokuapp.com/movies')
         .then((res) => {
             const movies = res.data.map((movie) => {
                 return { id: movie.id, title: movie.title, imageName: movie.imageName }
@@ -15,7 +15,7 @@ export const fetchMovies = () => dispatch => {
 }
 
 export const fetchDirectors = () => dispatch => {
-    axios.get(`/artists/directors`)
+    axios.get(`https://filmfanatics-api.herokuapp.com/artists/directors`)
         .then((res) => {
             const directors = res.data.map((director) => {
                 return { id: director.id, title: director.name, imageName: director.profilePicture }
@@ -28,7 +28,7 @@ export const fetchDirectors = () => dispatch => {
 }
 
 export const fetchActors = () => dispatch => {
-    axios.get(`/artists/actors`)
+    axios.get(`https://filmfanatics-api.herokuapp.com/artists/actors`)
         .then((res) => {
             const actors = res.data.map((actor) => {
                 return { id: actor.id, title: actor.name, imageName: actor.profilePicture }
@@ -41,7 +41,7 @@ export const fetchActors = () => dispatch => {
 }
 
 export const fetchActorsByName = (actorName) => dispatch => {
-    axios.get(`/artists/actor`, {
+    axios.get(`https://filmfanatics-api.herokuapp.com/artists/actor`, {
         params:
             { name: actorName }
     }).then((res) => {
@@ -56,7 +56,7 @@ export const fetchActorsByName = (actorName) => dispatch => {
 }
 
 export const fetchDirectorsByName = (directorName) => dispatch => {
-    axios.get(`/artists/director`, {
+    axios.get(`https://filmfanatics-api.herokuapp.com/artists/director`, {
         params:
             { name: directorName }
     }).then((res) => {
@@ -71,7 +71,7 @@ export const fetchDirectorsByName = (directorName) => dispatch => {
 }
 
 export const fetchMoviesByTitle = (title) => dispatch => {
-    axios.get(`/movies/search`, {
+    axios.get(`https://filmfanatics-api.herokuapp.com/movies/search`, {
         params:
             { title: title }
     }).then((res) => {
@@ -86,7 +86,7 @@ export const fetchMoviesByTitle = (title) => dispatch => {
 }
 
 export const fetchMoviesByGenre = (genreId) => dispatch => {
-    axios.get(`/movies/genre`, {
+    axios.get(`https://filmfanatics-api.herokuapp.com/movies/genre`, {
         params:
             { id: genreId }
     }).then((res) => {
@@ -101,7 +101,7 @@ export const fetchMoviesByGenre = (genreId) => dispatch => {
 }
 
 export const fetchMoviesByDecade = (decade) => dispatch => {
-    axios.get(`/movies/release`, {
+    axios.get(`https://filmfanatics-api.herokuapp.com/movies/release`, {
         params:
             { fromDate: decade.fromDate, toDate: decade.toDate }
     }).then((res) => {
@@ -116,7 +116,7 @@ export const fetchMoviesByDecade = (decade) => dispatch => {
 }
 
 export const searchMovies = title => dispatch => {
-    axios.get('/movies/search', {
+    axios.get('https://filmfanatics-api.herokuapp.com/movies/search', {
         params:
             { title: title }
     }).then(res => {
