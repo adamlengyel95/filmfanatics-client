@@ -1,0 +1,6 @@
+.GenreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 300px;
+    justify-content: space-evenly;
+}

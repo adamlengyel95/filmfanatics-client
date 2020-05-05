@@ -1,0 +1,122 @@
+.ArtistDetailsContainer {
+    width: 25%;
+    color: #4d4d4d;
+    background-color: #f2f2f2;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 8px #b3b3b3;
+    border: 1px solid #ccc;
+}
+
+.ArtistDetailsHeader {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.ProfilePicture {
+    border-radius: 12px;
+    height: 230px;
+}
+
+.ArtistInfo {
+    margin-left: 10px;
+}
+
+.ArtistInfoLabel {
+    font-weight: 400;
+}
+
+.ArtistInfoTitle {
+    font-weight: 640;
+}
+
+.FollowButton {
+    background-color: #1a6aff;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.FollowButton:hover {
+    background-color: #4d8bff;
+}
+
+.FollowButton:focus:after {
+    border-color: transparent;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.StopFollow {
+    background-color: #ff5c33;
+}
+
+.StopFollow:hover {
+    background-color: #ff704d;
+}
+
+.StopFollowButton:focus:after {
+    border-color: transparent;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ActorName {
+    font-size: 1.4rem;
+    margin: 0px 0px 10px;
+}
+
+.MovieContainer {
+    display: flex;
+    background: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.MovieContainer:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.MovieCover {
+    border-radius: 12px;
+    height: 100px;
+}
+
+.MovieInfo {
+    margin-left: 8px;
+}
+
+.MovieTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0px  0px 10px 0px;
+}
+
+.RatingCount {
+    display: inline;
+    vertical-align: super;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.DirectorLabel {
+    font-weight: 600;
+    margin: 10px 0px 4px 0px;
+}
+
+.MoviesLabel {
+    font-size: 1.25rem;
+}

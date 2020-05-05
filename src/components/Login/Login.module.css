@@ -1,0 +1,35 @@
+.LoginContainer {
+    width: 40%;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+}
+.LoginTitle {
+    text-align: center;
+    margin: auto;
+    color: #303030;
+}
+
+.ButtonContainer{
+    margin: auto;
+    text-align: center;
+
+}
+
+.LoginButton{
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #ff5c33;
+    color: white;
+    text-decoration: none;
+    padding:  5px 7px;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.Logo {
+    display: block;
+    margin: 30px auto;
+}

@@ -1,0 +1,33 @@
+.SideNavigation {
+    display: inline-block;
+    width: 250px;
+    height: min-content;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.SideNavigation ul {
+    margin: 5px;
+    padding: 0;
+    list-style-type: none;
+    
+}
+.SideNavItem {
+    text-decoration: none;
+    border-radius: 5px;
+    list-style: none;
+    margin: 5px 2px;
+    padding: 5px;
+    border: solid #ccc 1px;
+    cursor: pointer;
+    background-color: white;
+}
+.SideNavItem:hover{
+    background-color: #e6e6e6;;
+}
+
+.SideNavLink {
+    color: inherit;
+    font-weight: 600;
+    margin: 0;
+}

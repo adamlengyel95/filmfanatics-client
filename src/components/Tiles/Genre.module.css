@@ -1,0 +1,23 @@
+.GenreTile {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    color: #4d4d4d;
+    background-color: #f2f2f2;
+    padding: 5px;
+    box-shadow: 5px 10px 8px #b3b3b3;
+    border: 1px solid #ccc;
+    margin: 30px 10px;
+}
+
+.GenreTile:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.GenreTitle {
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+.ProfileDetailsContainer {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: center;
+}
+
+.RatedMoviesContainer {
+    width: 380px;
+    margin-right: 30px;
+}
+
+.FollowedArtistsContainer {
+    width: 380px;
+    margin-left: 30px;
+}
+
+.ArtistImage {
+    border-radius: 12px;
+    height: 100px;
+}
+
+.ArtistContainer {
+    display: flex;
+    background: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.ActorInfo {
+    margin-left: 8px;
+}
+
+.ArtistName {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+}
+
+.ArtistName:hover {
+    cursor: pointer;
+    color: #737373;
+}
+
+.MainTitle {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #4d4d4d
+}
+
+.StopFollowButton {
+    font-size: 0.8rem;
+    width: fit-content;
+    background-color: #ff5c33;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.StopFollowButton:hover {
+    background-color: #ff704d;
+}
+
+.NoContentTitle {
+    text-align: center;
+    font-weight: 400;
+}
+

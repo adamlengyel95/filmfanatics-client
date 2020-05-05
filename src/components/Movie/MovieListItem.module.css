@@ -1,0 +1,41 @@
+.MovieContainer {
+    color: #4d4d4d;
+    display: flex;
+    background: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.MovieContainer:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.MovieCover {
+    border-radius: 12px;
+    height: 100px;
+}
+
+.MovieInfo {
+    margin-left: 8px;
+}
+
+.MovieTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0px  0px 10px 0px;
+}
+
+.RatingCount {
+    display: inline;
+    vertical-align: super;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.DirectorLabel {
+    font-weight: 600;
+    margin: 10px 0px 4px 0px;
+}

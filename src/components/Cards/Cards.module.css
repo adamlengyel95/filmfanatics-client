@@ -1,0 +1,24 @@
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 300px;
+    justify-content: space-evenly;
+}
+
+.CardContainer:after {
+    content: "";
+    flex: 0.98;
+}
+
+.NoResultTitle {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    color: #4d4d4d;
+}
+
+@media screen and (max-width: 1400px) {
+    .MovieDetails {
+        margin: 10px 60px;
+    }
+}

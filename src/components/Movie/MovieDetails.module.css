@@ -1,0 +1,120 @@
+.MovieDetails {
+    width: 30%;
+    color: #4d4d4d;
+    background-color: #f2f2f2;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 8px #b3b3b3;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1400px) {
+    .MovieDetails {
+      width: 40%;
+    }
+  }
+
+.MovieDetailsHeader {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.MainTitle {
+    font-size: 1.7rem;
+    margin: 0px 0px 10px 0px;
+}
+
+.HeaderText {
+    margin: 5px 0px 10px 0px;
+}
+
+.ArtistName {
+    display: inline;
+}
+
+.ArtistName:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.SubTitle {
+    font-size: 1rem;
+    margin: 10px 0px 3px 0px;
+}
+
+.MovieCover {
+    border-radius: 12px;
+}
+
+.MovieInfo {
+    margin-left: 10px;
+}
+
+.Description {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.CommentsTitle {
+    font-size: 1.3rem;
+}
+
+.Comment {
+    background: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.NewComment {
+    width: 100%;
+}
+
+.CommentAuthor {
+    font-weight: bold;
+    margin: 0;
+}
+
+.CommentContent {
+    margin: 8px 0 0 0;
+}
+
+.UserCommentTitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.SendButton {
+    background-color: #1a6aff;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.SendButton:hover {
+    background-color: #4d8bff;
+}
+
+.RatingCount {
+    display: inline;
+    vertical-align: super;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+

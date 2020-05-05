@@ -1,0 +1,11 @@
+.Movie_container {
+    display: inline-block;
+    position:relative;
+    width: 60%;
+    border-left: solid #ccc 1px;
+    border-right: solid #ccc 1px;
+}
+
+.NoResult {
+    text-align: center;
+}
