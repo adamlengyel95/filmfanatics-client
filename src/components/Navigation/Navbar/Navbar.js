@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         } else {
             this.setState({ searchPlaceholder: 'Film keresése...' })
         }
-        axios.get('http://filmfanatics-api.rabit.hu/profile')
+        axios.get('http://filmfanatics-api.rabit.hu/profile', {withCredentials: true})
             .then(res => {
                 if (res.data.user_id) {
                     this.setState({ isAuthenticated: true });
