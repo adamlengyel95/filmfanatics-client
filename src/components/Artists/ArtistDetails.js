@@ -28,7 +28,7 @@ class ArtistDetails extends Component {
     }
 
     fetchArtistDetails = () => {
-        axios.get(`https://filmfanatics-api.herokuapp.com/artists/${this.props.match.params.id}`)
+        axios.get(`http://filmfanatics-api.rabit.hu/artists/${this.props.match.params.id}`)
             .then((res) => {
                 this.setState({ artistDetails: res.data })
             }).catch((err) => console.error('Error occured during fetching artist details', err))
@@ -39,7 +39,7 @@ class ArtistDetails extends Component {
     }
 
     onFollowClicked = () => {
-        axios.post('https://filmfanatics-api.herokuapp.com/artists/follow', null, {
+        axios.post('http://filmfanatics-api.rabit.hu/artists/follow', null, {
             params: {
                 artistId: this.state.artistDetails.id
             }
@@ -57,7 +57,7 @@ class ArtistDetails extends Component {
     }
 
     onStopFollowClicked = () => {
-        axios.delete('https://filmfanatics-api.herokuapp.com/artists/follow', {
+        axios.delete('http://filmfanatics-api.rabit.hu/artists/follow', {
             params: {
                 artistId: this.state.artistDetails.id
             }

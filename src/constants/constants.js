@@ -1,5 +1,5 @@
 const constants = {
-    API_URL: 'https://filmfanatics-api.herokuapp.com',
+    API_URL: 'http://filmfanatics-api.rabit.hu',
     BASE_URL: 'http://localhost:3000'
 }
 
