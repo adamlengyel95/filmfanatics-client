@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import axios from 'axios';
 
 import store from './store'
 import Layout from './components/Layout/Layout';
@@ -13,6 +14,11 @@ import ArtistDetails from './components/Artists/ArtistDetails';
 
 
 class App extends Component {
+
+  componentDidMount() {
+    axios.defaults.withCredentials = true
+  }
+
   render() {
     return (
       <Provider store={store}>
