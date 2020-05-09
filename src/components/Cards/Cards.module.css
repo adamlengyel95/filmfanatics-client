@@ -21,4 +21,8 @@
     .MovieDetails {
         margin: 10px 60px;
     }
+
+    .CardContainer {
+        margin: 10px 150px;
+    }
 }

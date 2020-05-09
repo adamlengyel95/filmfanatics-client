@@ -120,3 +120,33 @@
 .MoviesLabel {
     font-size: 1.25rem;
 }
+
+@media screen and (max-width: 1400px) {
+    .ArtistDetailsContainer {
+        width: 480px;
+    }
+
+    .ProfilePicture {
+        height: 200px;
+    }
+
+    .ArtistInfo {
+        font-size: 0.95rem;
+    }
+
+    .ActorName {
+        font-size: 1.3rem;
+    }
+
+    .MovieTitle {
+        font-size: 1.05rem;
+    }
+
+    .MovieContainer {
+        font-size: 0.9rem;
+    }
+
+    .MoviesLabel {
+        font-size: 1.2rem;
+    }
+}
