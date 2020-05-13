@@ -117,7 +117,7 @@ class Navbar extends React.Component {
                                 onKeyPress={this.enterPressed}
                                 placeholder={this.state.searchPlaceholder}>
                             </input>
-                            <button type="submit">Keresés</button>
+                            <button type="submit" onClick={this.onSearch}>Keresés</button>
                         </div>
                         <p className={classes.Login_button} onClick={this.goToProfilePage}>{this.state.actualUser.split(' ')[0]}</p>
                         <p className={classes.Logout_button} onClick={this.onSignOutClick}>Kijelentkezés</p>

@@ -10,7 +10,7 @@ export class Login extends Component {
         <h2 className={styles.LoginTitle}>Bejelentkezés</h2>
         <img className={styles.Logo} src={logo} alt="sign in logo" />
         <div className={styles.ButtonContainer}>
-            <a className={styles.LoginButton} href="http://filmfanatics-api.rabit.hu/auth/google">Bejelentkezés Google+ fiókkal</a>
+            <a className={styles.LoginButton} href="http://filmfanatics-api.rabit.hu/auth/google">Bejelentkezés Google fiókkal</a>
         </div>
       </div>
     )
