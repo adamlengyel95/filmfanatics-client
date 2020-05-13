@@ -4,3 +4,9 @@
     margin: 10px 300px;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 1400px) {
+    .GenreContainer {
+        margin: 10px 250px;
+    }
+}

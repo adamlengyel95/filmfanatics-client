@@ -39,3 +39,9 @@
 .DescriptionTitle {
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 1400px) {
+    .MovieCover {
+        height: 240px;
+    }
+}
