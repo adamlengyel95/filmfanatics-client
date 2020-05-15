@@ -47,7 +47,7 @@ class ArtistDetails extends Component {
             this.fetchArtistDetails();
         }).catch((err) => {
             if (err.response && err.response.status === 403) {
-                this.setState({ snackbarMessage: 'Az értékeléshez be kell jelentkeznie' })
+                this.setState({ snackbarMessage: 'Az követéshez be kell jelentkeznie' })
                 this.setState({ showForbiddenMessage: true })
             } else {
                 this.setState({ snackbarMessage: 'Hiba történt a követés közben' })
