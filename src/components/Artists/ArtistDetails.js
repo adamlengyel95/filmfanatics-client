@@ -23,7 +23,7 @@ class ArtistDetails extends Component {
         showForbiddenMessage: false
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.fetchArtistDetails();
     }
 
